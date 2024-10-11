@@ -16,7 +16,7 @@ A Function
 
 ** Types of Functions
 *** Named Functions
-Example:
+**** Example:
 #+begin_src js
 function greet(name) {
   return `Hello, ${name}`;
@@ -38,45 +38,45 @@ function greet(name) {
   - Lexical `this` binding.
 
 ** First-Class Functions
-- **Functions are First-Class Citizens** in JavaScript.
+*** Functions are First-Class Citizens in JavaScript.
   - Functions can be:
     - Assigned to variables.
     - Passed as arguments to other functions.
     - Returned from other functions.
 
 **** Example:
-  #+begin_src jsjavascript
+  #+begin_src js
   function callFunction(func) {
     return func();
   }
   #+end_src
 
 ** Higher-Order Functions
-***What are Higher-Order Functions?**
+*** What are Higher-Order Functions?**
   - Functions that can take other functions as arguments or return a function.
 **** Examples:
   - `map()`, `filter()`, `reduce()`:
 
-    #+begin_src jsjavascript
+    #+begin_src js
     const numbers = [1, 2, 3, 4];
     const doubled = numbers.map(n => n * 2); // [2, 4, 6, 8]
     #+end_src js
 
-**Pure Functions
-***What is a Pure Function?
+** Pure Functions
+*** What is a Pure Function?
   - A function that has no side effects and always returns the same output given the same input.
 **** Example:
-  #+begin_src jsjavascript
+  #+begin_src js
   function multiply(a, b) {
     return a * b; // no external state modification
   }
   #+end_src js
 
 ** Immutability
-***Functional Programming Emphasizes Immutability:**
+*** Functional Programming Emphasizes Immutability:**
   - Data is not modified but rather new data is created.
  **** Example:
-    #+begin_src jsjavascript
+    #+begin_src js
     const numbers = [1, 2, 3];
     const newNumbers = [...numbers, 4]; // original array stays intact
     #+end_src
@@ -85,10 +85,10 @@ _Why Important?_Ensures code is more predictable and less prone to errors.
 
 ---
 
-**Closures
-***Closures**: A function that retains access to variables from its outer scope, even after the outer function has finished executing.
+** Closures
+*** Closures**: A function that retains access to variables from its outer scope, even after the outer function has finished executing.
 **** Example:
-  #+begin_src jsjavascript
+  #+begin_src js
   function outer() {
     let count = 0;
     return function inner() {
