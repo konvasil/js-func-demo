@@ -26,15 +26,15 @@ function greet(name) {
 ** Arrow Functions (ES6)
 - Shorter Syntax for writing functions.
 - Example:
-  ```javascript
+ 
+#+begin_src jsjavascript
   const add = (a, b) => a + b;
   console.log(add(3, 4)); // 7
-  ```
-- **Advantages:**
+  #+end_src
+
+****Advantages:
   - Concise syntax.
   - Lexical `this` binding.
-
----
 
 ** First-Class Functions
 - **Functions are First-Class Citizens** in JavaScript.
@@ -43,11 +43,11 @@ function greet(name) {
     - Passed as arguments to other functions.
     - Returned from other functions.
 - Example:
-  ```javascript
+  #+begin_src jsjavascript
   function callFunction(func) {
     return func();
   }
-  ```
+  #+end_src
 
 ** Higher-Order Functions
 ***What are Higher-Order Functions?**
@@ -55,29 +55,29 @@ function greet(name) {
 **** Examples:
   - `map()`, `filter()`, `reduce()`:
 
-    ```javascript
+    #+begin_src jsjavascript
     const numbers = [1, 2, 3, 4];
     const doubled = numbers.map(n => n * 2); // [2, 4, 6, 8]
-    ```
+    #+end_src js
 
 **Pure Functions
 ***What is a Pure Function?
   - A function that has no side effects and always returns the same output given the same input.
 **** Example:
-  ```javascript
+  #+begin_src jsjavascript
   function multiply(a, b) {
     return a * b; // no external state modification
   }
-  ```
+  #+end_src js
 
 ** Immutability
 ***Functional Programming Emphasizes Immutability:**
   - Data is not modified but rather new data is created.
  **** Example:
-    ```javascript
+    #+begin_src jsjavascript
     const numbers = [1, 2, 3];
     const newNumbers = [...numbers, 4]; // original array stays intact
-    ```
+    #+end_src js
 _Why Important?_Ensures code is more predictable and less prone to errors.
 
 ---
@@ -85,7 +85,7 @@ _Why Important?_Ensures code is more predictable and less prone to errors.
 **Closures
 ***Closures**: A function that retains access to variables from its outer scope, even after the outer function has finished executing.
 **** Example:
-  ```javascript
+  #+begin_src jsjavascript
   function outer() {
     let count = 0;
     return function inner() {
@@ -96,21 +96,21 @@ _Why Important?_Ensures code is more predictable and less prone to errors.
   const counter = outer();
   console.log(counter()); // 1
   console.log(counter()); // 2
-  ```
+  #+end_src js
 
 **Functional Programming in NodeJS
 ***Functional Programming Concepts in NodeJS:
   - Leveraging modules like `lodash` for functional utilities.
   
 **** Example of chaining functional methods:
-    ```javascript
+    #+begin_src jsjavascript
     const _ = require('lodash');
     const arr = [1, 2, 3, 4];
     const result = _.chain(arr)
       .map(n => n * 2)
       .filter(n => n > 4)
       .value(); // [6, 8]
-    ```
+    #+end_src js
 
 ** Recap and Final Thoughts
 *** key Takeaways:
