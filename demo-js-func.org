@@ -81,7 +81,7 @@ function greet(name) {
     const newNumbers = [...numbers, 4]; // original array stays intact
     #+end_src
 
-_Why Important?_Ensures code is more predictable and less prone to errors.
+_Why Important?_ Ensures code is more predictable and less prone to errors.
 
 ---
 
@@ -101,8 +101,8 @@ _Why Important?_Ensures code is more predictable and less prone to errors.
   console.log(counter()); // 2
   #+end_src js
 
-**Functional Programming in NodeJS
-***Functional Programming Concepts in NodeJS:
+** Functional Programming in NodeJS
+*** Functional Programming Concepts in NodeJS:
   - Leveraging modules like `lodash` for functional utilities.
   
 **** Example of chaining functional methods:
