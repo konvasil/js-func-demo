@@ -86,7 +86,8 @@ _Why Important?_ Ensures code is more predictable and less prone to errors.
 ---
 
 ** Closures
-*** Closures**: A function that retains access to variables from its outer scope, even after the outer function has finished executing.
+*** Closures
+A function that retains access to variables from its outer scope, even after the outer function has finished executing.
 **** Example:
   #+begin_src js
   function outer() {
