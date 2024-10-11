@@ -1,0 +1,12 @@
+* Functions in JS
+** Functions in JavaScript are blocks of reusable code.
+A Function
++ A block of reusable code that performs a specific task.
++ Defined using the function keyword or as arrow functions in ES6.
+
+#+begin_src js
+ myFunction(param1, param2) {
+  // function body
+  return param1 + param2;
+}
+#+end_src
