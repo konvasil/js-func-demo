@@ -100,21 +100,21 @@ A function that retains access to variables from its outer scope, even after the
   const counter = outer();
   console.log(counter()); // 1
   console.log(counter()); // 2
-  #+end_src js
+  #+end_src
 
-** Functional Programming in NodeJS
-*** Functional Programming Concepts in NodeJS:
+** Functional Programming
+*** Functional Programming Concepts:
   - Leveraging modules like `lodash` for functional utilities.
   
 **** Example of chaining functional methods:
-    #+begin_src jsjavascript
+    #+begin_src js
     const _ = require('lodash');
     const arr = [1, 2, 3, 4];
     const result = _.chain(arr)
       .map(n => n * 2)
       .filter(n => n > 4)
       .value(); // [6, 8]
-    #+end_src js
+    #+end_src
 
 ** Recap and Final Thoughts
 *** key Takeaways:
