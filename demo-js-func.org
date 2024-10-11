@@ -33,7 +33,7 @@ function greet(name) {
   console.log(add(3, 4)); // 7
   #+end_src
 
-****Advantages:
+**** Advantages:
   - Concise syntax.
   - Lexical `this` binding.
 
